@@ -116,6 +116,8 @@ const ChatBot = ({ isChatOpen, setIsChatOpen, pdfContentInText }) => {
         data?.candidates?.[0]?.content?.parts?.[0]?.text ||
         "Sorry, I encountered an error. Please try again.";
 
+      console.log("aiResponse ->", aiResponse);
+
       setIsTyping(false);
       setMessages((prev) => [
         ...prev,

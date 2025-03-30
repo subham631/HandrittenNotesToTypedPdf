@@ -13,8 +13,9 @@ const FileUploader = ({
   const [error, setError] = useState(null);
 
   const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+  const GEMINI_API_KEY2 = import.meta.env.VITE_GEMINI_API_KEY2;
 
-  console.log("GEMINI_API_KEY", GEMINI_API_KEY);
+  console.log("GEMINI_API_KEY2", GEMINI_API_KEY2);
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
