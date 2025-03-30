@@ -6,21 +6,16 @@ const Header = () => {
     document.body.classList.contains("dark")
   );
   return (
-    <header className="bg-gray-800 py-4 shadow-lg flex justify-around">
-      <div className="w-[40%]">
+    <header className="bg-gray-800 py-4 shadow-lg ">
+      <div className="w-36 h-12 bg-blue-500 rounded-lg flex items-center justify-center ">
+        <span className="text-white text-2xl font-bold ">Pen2Pdf</span>
+      </div>
+      <div className="text-center">
         <h1 className="text-2xl font-bold">Handwritten Note Converter</h1>
         <p className="text-gray-400">Convert your notes to PDF effortlessly</p>
       </div>
-      <button
-        onClick={() => setIsDarkMode((prev) => !prev)}
-        className="w-16 rounded-full bg-gray-200 dark:bg-red-700 text-gray-800 dark:text-gray-200 transition flex items-center justify-center"
-      >
-        {isDarkMode ? (
-          <FaSun className="text-xl" />
-        ) : (
-          <FaMoon className="text-xl" />
-        )}
-      </button>
+
+      
     </header>
   );
 };

@@ -144,7 +144,7 @@ const ChatBot = ({ isChatOpen, setIsChatOpen, pdfContentInText }) => {
 
   return (
     <div className="fixed inset-0 flex items-center z-30 justify-end bg-black/50 bg-opacity-50 backdrop-blur-sm md:p-4">
-      <div className="bg-white dark:bg-gray-900 w-full max-w-2xl md:h-[85vh] h-full z-50 rounded-xl shadow-xl flex flex-col border border-gray-200 dark:border-gray-700 overflow-hidden transform transition-all duration-300 ease-in-out">
+      <div className="bg-gray-900 w-full max-w-2xl md:h-[85vh] h-full z-50 rounded-xl shadow-xl flex flex-col border border-gray-200 dark:border-gray-700 overflow-hidden transform transition-all duration-300 ease-in-out">
         {/* Chat Header */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-800 dark:to-blue-900 text-white p-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
