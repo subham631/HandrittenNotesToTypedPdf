@@ -8,9 +8,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/SudipSarkar1193/GreekGod-Go-server/internals/database"
 	"github.com/SudipSarkar1193/GreekGod-Go-server/internals/types"
-	"github.com/go-playground/validator/v10"
+	
 )
 func New(db *sql.DB) http.HandlerFunc {
 

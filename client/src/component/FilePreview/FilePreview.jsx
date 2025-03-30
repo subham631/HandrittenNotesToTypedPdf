@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const FilePreview = ({ file }) => {
   const [previewUrl, setPreviewUrl] = React.useState(null);
@@ -11,9 +11,9 @@ const FilePreview = ({ file }) => {
   }, [file]);
 
   return (
-    <div className="mt-4">
+    <div className="bg-gray-900 bg-opacity-60 p-8 rounded-3xl shadow-2xl backdrop-blur-lg border border-gray-700 transition-all duration-500 hover:shadow-blue-500/50">
       <p className="text-sm text-gray-400 mb-2">Preview:</p>
-      {file.type.includes('image') ? (
+      {file.type.includes("image") ? (
         <img
           src={previewUrl}
           alt="Preview"

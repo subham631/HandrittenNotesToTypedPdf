@@ -1,0 +1,153 @@
+```html
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+}
+h1 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 15px;
+}
+pre {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+code {
+  font-family: monospace;
+  font-size: 14px;
+  color: #000;
+}
+.keyword { color: blue; }
+.operator { color: red; }
+.comment { color: green; }
+</style>
+</head>
+<body>
+
+<h1>Stub & Driver</h1>
+<p>In a top-down or bottom-up approach, if one module at a given level is ready but another is not, we create dummy modules (stub and driver) for the incomplete parts to test the ready module.</p>
+
+<h1>Mutation Testing</h1>
+<p>Mutation testing belongs to White Box testing, as we create mutants of the internal code. Mutation score is calculated as (Killed Mutants / Total Mutants) * 100%.</p>
+
+<pre><code class="language-c++">
+// Value Mutation
+int y = 6; // Original
+int y = 5; // Mutant
+
+// Decision Mutation
+if (px == 1)  // Original
+  p = 4;
+if (px != 1) // Mutant
+  p = 4;
+
+// Statement Mutation
+if (a &lt; b) {  // Original
+  a = a + b;
+}
+if (a &lt; b) { // Mutant
+  a = a * b;
+}
+</code></pre>
+
+<p>Example: Test cases a=2, b=2.  Operators: +, -, *, /, %.  Killed: 4, Live: 1. Mutation Score = (4/5) * 100 = 80% (Note: Original calculation was incorrect).</p>
+
+<h1>White Box Testing</h1>
+<p>Types of White Box Testing:</p>
+<ol>
+  <li>Cooperate based Testing</li>
+  <li>Data flow Testing</li>
+  <li>Mutation Testing</li>
+</ol>
+
+<h1>Team Structure</h1>
+<p>Which team structure does not use hierarchy? Democratic.</p>
+
+<h1>Gamma Testing (β-Testing)</h1>
+<p>Gamma testing (β-testing), also known as Release Candidate Testing or Final Phase Testing, is a type of acceptance testing. It is done after α and β testing.</p>
+
+<h1>Software Reliability</h1>
+<p>Software reliability is a software quality that determines the ability of the software to retain good characteristics over time without the presence of any failure. Software reliability is volatile; it can be increased or decreased. Therefore, we require software reliability growth.</p>
+
+<h1>MTTF, MTTR, and MTBF</h1>
+<p>MTTF: Mean Time To Failure<br>
+MTTR: Mean Time To Repair<br>
+MTBF: Mean Time Between Failure = MTTF + MTTR</p>
+
+<p>Estimate:
+<pre><code class="language-text">
+MTTF = (t1 + t2 + t3 + ... + tn) / n
+MTTR = Σ(ti+1 - ti) / n 
+</code></pre></p>
+
+<p>What do you mean by 100 hrs MTBF? It means that once a failure occurs, the next failure is expected to occur after 100 hrs.</p>
+
+<h1>Availability</h1>
+<p>Availability measures how likely software can be available for use over a period of time without failure.
+Availability = (MTTF / MTBF) * 100%.</p>
+
+<p>Example: What is the availability of software if its MTBF = 25 days & MTTR = 6 hours?<br>
+MTTF = MTBF - MTTR = (25 * 24) - 6 = 594 hours<br>
+Availability = (594 / 600) * 100% = 99% (Note: Original calculation used 500 instead of 600)</p>
+
+<h1>DFD to Structure Chart</h1>
+<p>DFD and Structure Chart are part of Function Oriented Design.  A Structure Chart can be derived from a DFD.  It represents the system in detail, determines the number of modules, and describes the functions of each module. The Structure Chart represents the hierarchical structure of each module and is used to determine the number of modules based on which code will be written.</p>
+
+<h1>Structured Analysis vs. Structured Design (SA vs SD)</h1>
+<p>Both Structured Analysis (SA) and Structured Design (SD) belong to function-oriented design. SA analyzes user requirements and data flow within the system (e.g., DFD). SD works after SA and is used to determine the number of modules (e.g., Structure Chart).</p>
+
+<p>There are two strategies to convert a DFD into a corresponding structure chart: Transform Analysis.</p>
+
+<h1>3-Parts of DFD</h1>
+<ol>
+  <li>Input Section</li>
+  <li>Logical Processing</li>
+  <li>Output Section</li>
+</ol>
+
+<h1>Factoring</h1>
+<p>Factoring is the process of decomposing one module into multiple modules in a Structure Chart.</p>
+
+<h1>Control Flow in Structure Charts</h1>
+<p>
+'o' represents calls with data.<br>
+'→' represents calling a module or jumping to a module.<br>
+'↓' represents calling with control signals.<br>
+A dotted arrow indicates conditional calling or repeated calling.
+</p>
+
+<h1>Fan-in and Fan-out</h1>
+<p>Fan-in: Number of inputs coming to a module.<br>
+Fan-out: Number of outputs going from a module.</p>
+
+<h1>Documentation</h1>
+<p>
+<b>Internal Documentation:</b> Used for knowing different activities at different stages of the SDLC. Only used by employees and not shown to the customer.<br>
+<b>External Documentation:</b> Given to the customer to operate the product without any problem (e.g., User's manual).
+</p>
+
+<h1>Feasibility Studies</h1>
+<p>Types of feasibility studies:</p>
+<ol>
+  <li>Technical Feasibility</li>
+  <li>Economical Feasibility</li>
+  <li>Operational Feasibility</li>
+  <li>Legal Feasibility</li>
+</ol>
+
+<h1>Code Review Techniques</h1>
+<p>Code review, code inspection, walkthrough.</p>
+
+
+</body>
+</html>
+```
