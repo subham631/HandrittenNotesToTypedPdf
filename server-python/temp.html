@@ -1,152 +1,238 @@
 ```html
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f8f8f8;
-}
-h1 {
-  color: #0056b3;
-  margin-bottom: 10px;
-}
-p {
-  margin-bottom: 15px;
-}
-pre {
-  background-color: #eee;
-  padding: 10px;
-  border-radius: 5px;
-  overflow-x: auto;
-}
-code {
-  font-family: monospace;
-  font-size: 14px;
-  color: #000;
-}
-.keyword { color: blue; }
-.operator { color: red; }
-.comment { color: green; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refined Text</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 p-8">
 
-<h1>Stub & Driver</h1>
-<p>In a top-down or bottom-up approach, if one module at a given level is ready but another is not, we create dummy modules (stub and driver) for the incomplete parts to test the ready module.</p>
+    <div class="container mx-auto bg-white shadow-md rounded-md p-6">
+        <h1 class="text-2xl font-semibold mb-4" style="font-size: 2em; font-weight: bold; margin-bottom: 0.5em; text-align: center;">Mathematics</h1>
+        <h1 class="text-xl font-semibold mb-2" style="font-size: 1.5em; font-weight: bold; margin-bottom: 0.3em;">SECTION 1 (Maximum marks: 24)</h1>
+        <ul class="list-disc pl-5">
+            <li>This section contains <b>EIGHT (08)</b> questions.</li>
+            <li>The answer to each question is a <b>SINGLE DIGIT INTEGER</b> ranging from <b>0 TO 9, BOTH INCLUSIVE</b>.</li>
+            <li>For each question, enter the correct integer corresponding to the answer using the mouse and the on-screen virtual numeric keypad in the place designated to enter the answer.</li>
+        </ul>
+        <p class="mb-2">Answer to each question will be evaluated according to the following marking scheme:</p>
+        <ul class="list-none pl-5">
+            <li><b>Full Marks</b>: +3 If ONLY the correct integer is entered;</li>
+            <li><b>Zero Marks</b>: 0 If the question is unanswered;</li>
+            <li><b>Negative Marks</b>: -1 In all other cases.</li>
+        </ul>
 
-<h1>Mutation Testing</h1>
-<p>Mutation testing belongs to White Box testing, as we create mutants of the internal code. Mutation score is calculated as (Killed Mutants / Total Mutants) * 100%.</p>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.1</h1>
+        <p class="mb-2">
+            Let α and β be real numbers such that -π/2 &lt; β &lt; 0 &lt; α &lt; π/2. If sin(α + β) = 1/3 and cos(α – β) = 2/3, then the greatest integer less than or equal to
+        </p>
 
-<pre><code class="language-c++">
-// Value Mutation
-int y = 6; // Original
-int y = 5; // Mutant
+        <p class="text-center">
+            (sin α / cos β + cos α / sin α)² + (sin β / sin α + sin β / cos α)²
+        </p>
 
-// Decision Mutation
-if (px == 1)  // Original
-  p = 4;
-if (px != 1) // Mutant
-  p = 4;
+        <p class="mb-4">is _______.</p>
 
-// Statement Mutation
-if (a &lt; b) {  // Original
-  a = a + b;
-}
-if (a &lt; b) { // Mutant
-  a = a * b;
-}
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.2</h1>
+        <p class="mb-2">
+            If y(x) is the solution of the differential equation
+        </p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">xdy – (y² – 4y)dx = 0 for x > 0, y(1) = 2,</code></pre>
+        <p class="mb-2">
+            and the slope of the curve y = y(x) is never zero, then the value of 10 y(√2) is _______.
+        </p>
+
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.3</h1>
+        <p class="mb-2">The greatest integer less than or equal to</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">
+∫1log₂(x³+1) dx + ∫1log₂9 (2^(x/3) - 1)³ dx
+        </code></pre>
+        <p class="mb-4">is _______.</p>
+
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.4</h1>
+        <p class="mb-2">The product of all positive real values of x satisfying the equation</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">x^(16(log₅ x)³ - 68 log₅ x) = 5^(-16)</code></pre>
+        <p>is _______.</p>
+
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.5</h1>
+        <p class="mb-2">If</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">β = lim (x→0)  (e^(x³) - (1 - x³)^(-1/2) + (1 - x²)^(-1/2) - 1) sin x / (x sin² x)</code></pre>
+        <p class="mb-2">then the value of 6ß is _______.</p>
+
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.6</h1>
+        <p class="mb-2">Let ß be a real number. Consider the matrix</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">A = | β  0  1 |
+    | 2  1 -2 |
+    | 3  1 -2 |
 </code></pre>
+        <p class="mb-2">If A⁷ – (β – 1)A⁶ – βA⁵ is a singular matrix, then the value of 9ß is _______.</p>
 
-<p>Example: Test cases a=2, b=2.  Operators: +, -, *, /, %.  Killed: 4, Live: 1. Mutation Score = (4/5) * 100 = 80% (Note: Original calculation was incorrect).</p>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.7</h1>
+        <p class="mb-2">Consider the hyperbola</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">x²/100 - y²/64 = 1</code></pre>
+        <p class="mb-2">with foci at S and S₁, where S lies on the positive x-axis. Let P be a point on the hyperbola, in the first quadrant. Let ∠SPS₁ = α, with α &lt; π/2. The straight line passing through the point S and having the same slope as that of the tangent at P to the hyperbola, intersects the straight line S₁P at P₁. Let δ be the distance of P from the straight line SP₁, and β = S₁P. Then the greatest integer less than or equal to (9δ sin(α/2)) / β is _______.</p>
 
-<h1>White Box Testing</h1>
-<p>Types of White Box Testing:</p>
-<ol>
-  <li>Cooperate based Testing</li>
-  <li>Data flow Testing</li>
-  <li>Mutation Testing</li>
-</ol>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.8</h1>
+        <p class="mb-2">Consider the functions f, g: R → R defined by</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">f(x) = x² + 5/12
+and
+g(x) = { 2(1 - 4|x|)/3,  |x| ≤ 3/4
+        { 0,             |x| > 3/4
+</code></pre>
+        <p class="mb-2">If α is the area of the region</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">{(x, y) ∈ R × R : |x| ≤ 3/4, 0 ≤ y ≤ min{f(x), g(x)}},</code></pre>
+        <p class="mb-2">then the value of 9α is _______.</p>
 
-<h1>Team Structure</h1>
-<p>Which team structure does not use hierarchy? Democratic.</p>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">SECTION 2 (Maximum marks: 24)</h1>
+        <ul class="list-disc pl-5">
+            <li>This section contains <b>SIX (06)</b> questions.</li>
+            <li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is (are) correct answer(s).</li>
+            <li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li>
+        </ul>
+        <p class="mb-2">Answer to each question will be evaluated according to the following marking scheme:</p>
+        <ul class="list-none pl-5">
+            <li><b>Full Marks</b>: +4 ONLY if (all) the correct option(s) is (are) chosen;</li>
+            <li><b>Partial Marks</b>: +3 If all the four options are correct but ONLY three options are chosen;</li>
+            <li><b>Partial Marks</b>: +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;</li>
+            <li><b>Partial Marks</b>: +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;</li>
+            <li><b>Zero Marks</b>: 0 If unanswered;</li>
+            <li><b>Negative Marks</b>: -2 In all other cases.</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.9</h1>
+        <p class="mb-2">Let PQRS be a quadrilateral in a plane, where QR = 1, ∠PQR = ∠QRS = 70°, ∠PQS = 15° and ∠PRS = 40°. If ∠RPS = θ°, PQ = α and PS = β, then the interval(s) that contain(s) the value of 4 α β sin θ° is/are</p>
+        <ul class="list-none pl-5">
+            <li>(A) (0, √2)</li>
+            <li>(B) (1, 2)</li>
+            <li>(C) (√2, 3)</li>
+            <li>(D) (2√2, 3√2)</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.10</h1>
+        <p class="mb-2">Let</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">α = ∑(k=1 to ∞) sin²k(π/2)</code></pre>
+        <p>Let g : [0,1] → R be the function defined by</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">g(x) = 2^(x) + 2^(α(1-x))</code></pre>
 
-<h1>Gamma Testing (β-Testing)</h1>
-<p>Gamma testing (β-testing), also known as Release Candidate Testing or Final Phase Testing, is a type of acceptance testing. It is done after α and β testing.</p>
-
-<h1>Software Reliability</h1>
-<p>Software reliability is a software quality that determines the ability of the software to retain good characteristics over time without the presence of any failure. Software reliability is volatile; it can be increased or decreased. Therefore, we require software reliability growth.</p>
-
-<h1>MTTF, MTTR, and MTBF</h1>
-<p>MTTF: Mean Time To Failure<br>
-MTTR: Mean Time To Repair<br>
-MTBF: Mean Time Between Failure = MTTF + MTTR</p>
-
-<p>Estimate:
-<pre><code class="language-text">
-MTTF = (t1 + t2 + t3 + ... + tn) / n
-MTTR = Σ(ti+1 - ti) / n 
-</code></pre></p>
-
-<p>What do you mean by 100 hrs MTBF? It means that once a failure occurs, the next failure is expected to occur after 100 hrs.</p>
-
-<h1>Availability</h1>
-<p>Availability measures how likely software can be available for use over a period of time without failure.
-Availability = (MTTF / MTBF) * 100%.</p>
-
-<p>Example: What is the availability of software if its MTBF = 25 days & MTTR = 6 hours?<br>
-MTTF = MTBF - MTTR = (25 * 24) - 6 = 594 hours<br>
-Availability = (594 / 600) * 100% = 99% (Note: Original calculation used 500 instead of 600)</p>
-
-<h1>DFD to Structure Chart</h1>
-<p>DFD and Structure Chart are part of Function Oriented Design.  A Structure Chart can be derived from a DFD.  It represents the system in detail, determines the number of modules, and describes the functions of each module. The Structure Chart represents the hierarchical structure of each module and is used to determine the number of modules based on which code will be written.</p>
-
-<h1>Structured Analysis vs. Structured Design (SA vs SD)</h1>
-<p>Both Structured Analysis (SA) and Structured Design (SD) belong to function-oriented design. SA analyzes user requirements and data flow within the system (e.g., DFD). SD works after SA and is used to determine the number of modules (e.g., Structure Chart).</p>
-
-<p>There are two strategies to convert a DFD into a corresponding structure chart: Transform Analysis.</p>
-
-<h1>3-Parts of DFD</h1>
-<ol>
-  <li>Input Section</li>
-  <li>Logical Processing</li>
-  <li>Output Section</li>
-</ol>
-
-<h1>Factoring</h1>
-<p>Factoring is the process of decomposing one module into multiple modules in a Structure Chart.</p>
-
-<h1>Control Flow in Structure Charts</h1>
-<p>
-'o' represents calls with data.<br>
-'→' represents calling a module or jumping to a module.<br>
-'↓' represents calling with control signals.<br>
-A dotted arrow indicates conditional calling or repeated calling.
-</p>
-
-<h1>Fan-in and Fan-out</h1>
-<p>Fan-in: Number of inputs coming to a module.<br>
-Fan-out: Number of outputs going from a module.</p>
-
-<h1>Documentation</h1>
-<p>
-<b>Internal Documentation:</b> Used for knowing different activities at different stages of the SDLC. Only used by employees and not shown to the customer.<br>
-<b>External Documentation:</b> Given to the customer to operate the product without any problem (e.g., User's manual).
-</p>
-
-<h1>Feasibility Studies</h1>
-<p>Types of feasibility studies:</p>
-<ol>
-  <li>Technical Feasibility</li>
-  <li>Economical Feasibility</li>
-  <li>Operational Feasibility</li>
-  <li>Legal Feasibility</li>
-</ol>
-
-<h1>Code Review Techniques</h1>
-<p>Code review, code inspection, walkthrough.</p>
-
+        <p>Then, which of the following statements is/are TRUE ?</p>
+        <ul class="list-none pl-5">
+            <li>(A) The minimum value of g(x) is 2^(7/6)</li>
+            <li>(B) The maximum value of g(x) is 1 + 2^(1/4)</li>
+            <li>(C) The function g(x) attains its maximum at more than one point</li>
+            <li>(D) The function g(x) attains its minimum at more than one point</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.11</h1>
+        <p>Let z denote the complex conjugate of a complex number z. If z is a non-zero complex number for which both real and imaginary parts of</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">(z̄)² + 1/z²</code></pre>
+        <p>are integers, then which of the following is/are possible value(s) of |z| ?</p>
+        <ul class="list-none pl-5">
+            <li>(A) ((7+3√5)/4)^(1/4)</li>
+            <li>(B) ((7-3√5)/4)^(1/4)</li>
+            <li>(C) ((7+√13)/6)^(1/4)</li>
+            <li>(D) ((7+√13)/6)^(1/4)</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.12</h1>
+        <p>Let G be a circle of radius R > 0. Let G₁, G₂, ..., Gₙ be n circles of equal radius r > 0. Suppose each of the n circles G₁, G₂, ..., Gₙ touches the circle G externally. Also, for i = 1, 2, ..., n – 1, the circle Gᵢ touches Gᵢ₊₁ externally, and Gₙ touches G₁ externally. Then, which of the following statements is/are TRUE ?</p>
+        <ul class="list-none pl-5">
+            <li>(A) If n = 4, then (√2 – 1)r &lt; R</li>
+            <li>(B) If n = 5, then r &lt; R</li>
+            <li>(C) If n = 8, then (√2 – 1) r &lt; R</li>
+            <li>(D) If n = 12, then √2 (√3 + 1) r > R</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.13</h1>
+        <p>Let î, ĵ and k be the unit vectors along the three positive coordinate axes. Let</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">a = 3î + ĵ − k,
+b = î + b₂ĵ + b₃k,    b₂, b₃ ∈ R,
+c = c₁î + c₂ĵ + c₃k,    c₁, c₂, c₃ ∈ R
+</code></pre>
+        <p>be three vectors such that b₂b₃ > 0, a ⋅ b = 0 and</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">| 0    -c₃     c₂ |   | b₂ |    | 3 - c₁ |
+| c₃    0     -c₁ |   | b₃ | =  | 1 - c₂ |
+| -c₂   c₁    0  |   | 1  |    | -1 - c₃|
+</code></pre>
+        <p>Then, which of the following is/are TRUE ?</p>
+        <ul class="list-none pl-5">
+            <li>(A) a ⋅ c = 0</li>
+            <li>(B) b ⋅ c = 0</li>
+            <li>(C) |c| > √10</li>
+            <li>(D) |c| ≤ √11</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.14</h1>
+        <p>For x ∈ R, let the function y(x) be the solution of the differential equation</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">dy/dx + 12y = cos(πx/12), y(0) = 0.</code></pre>
+        <p>Then, which of the following statements is/are TRUE ?</p>
+        <ul class="list-none pl-5">
+            <li>(A) y(x) is an increasing function</li>
+            <li>(B) y(x) is a decreasing function</li>
+            <li>(C) There exists a real number β such that the line y = β intersects the curve y = y(x) at infinitely many points</li>
+            <li>(D) y(x) is a periodic function</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">SECTION 3 (Maximum marks: 12)</h1>
+        <ul class="list-disc pl-5">
+            <li>This section contains <b>FOUR (04)</b> questions.</li>
+            <li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li>
+            <li>For each question, choose the option corresponding to the correct answer.</li>
+        </ul>
+        <p class="mb-2">Answer to each question will be evaluated according to the following marking scheme:</p>
+        <ul class="list-none pl-5">
+            <li><b>Full Marks</b>: +3 If ONLY the correct option is chosen;</li>
+            <li><b>Zero Marks</b>: 0 If none of the options is chosen (i.e. the question is unanswered);</li>
+            <li><b>Negative Marks</b>: -1 In all other cases.</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.15</h1>
+        <p>Consider 4 boxes, where each box contains 3 red balls and 2 blue balls. Assume that all 20 balls are distinct. In how many different ways can 10 balls be chosen from these 4 boxes so that from each box at least one red ball and one blue ball are chosen ?</p>
+        <ul class="list-none pl-5">
+            <li>(A) 21816</li>
+            <li>(B) 85536</li>
+            <li>(C) 12096</li>
+            <li>(D) 156816</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.16</h1>
+        <p>If M = </p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">|  3/2   -1/2 |
+|  1/2    5/2 |
+</code></pre>
+        <p>then which of the following matrices is equal to M²⁰²² ?</p>
+        <ul class="list-none pl-5">
+            <li>(A) |  3034  -3033 |
+                    | -3033  -3032 |
+            </li>
+            <li>(B) |  3034  -3033 |
+                    |  3033  -3032 |
+            </li>
+            <li>(C) |  3033  -3032 |
+                    | -3032  -3031 |
+            </li>
+            <li>(D)  |  3032  -3031 |
+                     | -3031  -3030 |
+            </li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.17</h1>
+        <p>Suppose that</p>
+        <ul class="list-none pl-5">
+            <li>Box-I contains 8 red, 3 blue and 5 green balls,</li>
+            <li>Box-II contains 24 red, 9 blue and 15 green balls,</li>
+            <li>Box-III contains 1 blue, 12 green and 3 yellow balls,</li>
+            <li>Box-IV contains 10 green, 16 orange and 6 white balls.</li>
+        </ul>
+        <p>A ball is chosen randomly from Box-I; call this ball b. If b is red then a ball is chosen randomly from Box-II, if b is blue then a ball is chosen randomly from Box-III, and if b is green then a ball is chosen randomly from Box-IV. The conditional probability of the event ‘one of the chosen balls is white' given that the event ‘at least one of the chosen balls is green' has happened, is equal to</p>
+        <ul class="list-none pl-5">
+            <li>(A) 15/256</li>
+            <li>(B) 3/16</li>
+            <li>(C) 5/52</li>
+            <li>(D) 1/8</li>
+        </ul>
+        <h1 class="text-xl font-semibold mt-6 mb-2" style="font-size: 1.3em; font-weight: bold; margin-top: 1em; margin-bottom: 0.3em;">Q.18</h1>
+        <p>For positive integer n, define</p>
+        <pre><code class="bg-gray-100 p-2 rounded-md block" style="background-color: #f0f0f0; padding: 0.5em; border-radius: 0.3em; display: block;">f(n) = n + (16 + 5n - 3n²) / (4n + 3n²) + (32 + n - 3n²) / (8n + 3n²) + (48 - 3n - 3n²) / (12n + 3n²) + ... + (25n - 7n²) / (7n²)</code></pre>
+        <p>Then, the value of lim (n→∞) f(n) is equal to</p>
+        <ul class="list-none pl-5">
+            <li>(A) 3 + (3/4)logₑ 7</li>
+            <li>(B) 4 - (3/4)logₑ (7/3)</li>
+            <li>(C) 4 - (3/4)logₑ (7/3)</li>
+            <li>(D) 3 + (3/4)logₑ 7</li>
+        </ul>
+    </div>
 
 </body>
 </html>
